@@ -1,0 +1,34 @@
+{
+  "name": "employeeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.4",
+    "firebase-tools": "^7.8.1",
+    "global": "^4.4.0",
+    "live-server": "^1.2.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-redux": "5.0.5",
+    "react-router-dom": "5.1.2",
+    "redux": "3.7.2",
+    "responsive-loader": "^1.2.0",
+    "style-loader": "0.18.2",
+    "url-loader": "^3.0.0",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
+  }
+}
