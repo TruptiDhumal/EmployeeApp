@@ -32,11 +32,11 @@ class LayoutTheme extends React.Component {
     render(){
     return (
        <div className="bg-dark">
-            <div className="jumbotron text-center bg-dark text-white shadow mb-1 p-4">
+            <div className="jumbotron text-center bgBlack text-white shadow mb-0 p-4">
                 <div>
                     <h1>{this.props.AppTitle}</h1>
                     {(this.props.isWelcomePage)? <p className="text-white-50">....Inside Employees Portal....</p> : null}
-                    {(this.props.isWelcomePage)?<span className="material-icons cursorPointer text-white font-weight-bolder" onClick={this.goToBackUrl}>arrow_back</span> : null}
+                    {(this.props.isWelcomePage)?<span className="material-icons float-left cursorPointer text-white font-weight-bolder" onClick={this.goToBackUrl}>arrow_back</span> : null}
                     
                 </div>
                 

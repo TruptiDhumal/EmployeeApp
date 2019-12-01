@@ -3,9 +3,9 @@ const initialState = {
 employeelist:[
         { id:1, firstname:'Trupti', LastName :"Kapare" , gender: 'F', Address:"207 Model Colony", city:'pune' , contact:9689692215 ,pincode :4565 , Country :'India'},
         { id:2, firstname:'Dhiraj', LastName :"Kapare" , gender: 'M', Address:"207 Model Colony", city:'pune' , contact:9689692215 ,pincode :4565 , Country :'India'},
-        { id:3, firstname:'Akshay', LastName :"Shastrakar",gender: 'M',  Address:"207 Model Colony", city:'pune' , contact:9689692215 ,pincode :4565 , Country :'India'},
         { id:4, firstname:'Rohit', LastName :"Mamidwar" , gender: 'M', Address:"207 Model Colony", city:'pune' , contact:9689692215 ,pincode :4565 , Country :'India'},
-        { id:6, firstname:'Rupali', LastName :"Firke" , gender: 'F', Address:"207 Model Colony", city:'pune' , contact:9689692215 ,pincode :4565 , Country :'India'}
+        { id:6, firstname:'Rupali', LastName :"Firke" , gender: 'F', Address:"207 Model Colony", city:'pune' , contact:9689692215 ,pincode :4565 , Country :'India'},
+        { id:3, firstname:'Akshay', LastName :"Shastrakar",gender: 'M',  Address:"207 Model Colony", city:'pune' , contact:9689692215 ,pincode :4565 , Country :'India'}
     ],
 AppTitle:'WelCome To Employees Portal',
 isWelcomePage:false,
@@ -66,6 +66,16 @@ const EmployeeeReducer = (state = initialState, action) =>{
                 resumelist : state.resumelist,
                 isWelcomePage : (action.title != "WelCome To Employees Portal"),
                 current_emp_id : action.id
+            }
+        case 'SET_TEXT_FILTER':
+            return {
+                employeelist : state.employeelist.filter(
+                (emp)=>
+                emp.firstname.toLocaleLowerCase().includes(action.text) || emp.LastName.toLocaleLowerCase().includes(action.text)),
+                AppTitle : state.AppTitle,
+                resumelist : state.resumelist,
+                isWelcomePage : state.isWelcomePage,
+                current_emp_id : state.current_emp_id
             }
         default :
         return {

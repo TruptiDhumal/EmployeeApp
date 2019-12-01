@@ -2,6 +2,13 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {ChangeTitleAction} from '../Actions/CommonActions';
 import {connect} from 'react-redux';
+import HomebgImg from '../images/homeBg.png'
+import { height } from 'window-size';
+
+var containerStyle = {
+    width: "100%",
+    backgroundImage: `url(${HomebgImg})`
+  };
 
 class Home extends React.Component {
     constructor(props){
@@ -18,11 +25,10 @@ class Home extends React.Component {
         this.props.changeTitle("Home");
     }
     render(){
-        console.log(this.props);
         return(
-            <div className="container">
+            <div className="bg homgbg" style={containerStyle}>
                 <div className="row">
-                    <div className="col-sm-12 text-center">
+                    <div className="col-sm-12 text-center mt-10">
                         <button className='btn btn-dark m-3'><NavLink className="text-white" to={'/notfound'} >Display Not Found</NavLink></button> 
                         <button className='btn btn-dark'><NavLink className="text-white" to={'/employeelist'} >Display All Employees</NavLink></button>
                     </div>

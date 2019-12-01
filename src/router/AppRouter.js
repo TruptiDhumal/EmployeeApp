@@ -11,7 +11,7 @@ import LayoutTheme from '../components/LayoutTheme';
 const AppRouter = ()=> {
     return (
         <BrowserRouter>
-            <div>
+            <div >
                 <LayoutTheme/>
                 <Switch>
                     <Route path='/' component={Dashboard} exact={true}/>

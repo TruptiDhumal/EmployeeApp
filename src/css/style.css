@@ -40,9 +40,10 @@
 
 .homelink{
     margin-top: 15%;
-    width: 15%;
+    width: 28%;
     /* min-height: 15%; */
-    font-size: 20px;
+    font-size: 34px;
+    min-height: 20%;
     font-family: Apple Chancery, cursive;
 }
 
@@ -51,4 +52,50 @@
     margin-right: 4px;
     color: black;
     font-style: bold;
+}
+
+.bg {
+    /* The image used */
+    /* background-image: url("../images/mainBg.jpg"); */
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.bgBlack{
+    background-color: black
+}
+
+.bgBlackwithOpacity{
+    background-color: rgba(0,0,0,0.2)
+}
+
+.mt-10{
+    margin-top: 10%;
+}
+
+.searchEmpContainer{
+    margin:10px;
+    width: 50%;
+}
+
+.searchEmpContainer input{
+    border: 2px solid gray;
+}
+
+.m10px{
+    margin:10px;
+}
+
+.sortarrow{
+    font-size: 20px;
+}
+
+.homgbg{
+    min-height: 600px;
 }

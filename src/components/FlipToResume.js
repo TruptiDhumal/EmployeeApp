@@ -1,7 +1,7 @@
 import React from 'react';
 import ResumeInfo from '../components/ResumeInfo';
 import ResumeNotes from '../components/ResumeNotes';
-import ResumeProjects from '../components/ResumeProjects';
+import ResumeProjects from './ResumeProjects';
 import ResumeHobbies from '../components/ResumeHobbies';
 import {BrowserRouter,Route ,NavLink ,Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
